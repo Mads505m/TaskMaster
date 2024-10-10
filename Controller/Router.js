@@ -16,8 +16,6 @@ routes.get('/tasks', (req, res) => {
 
 routes.post('/tasks', (req, res) => {
     const newTask = req.body.task;
-
-    console.log('POST request received'); 
     if (newTask && newTask.trim() !== '') {
         tasks.push(newTask);
         res.status(201).json(newTask);

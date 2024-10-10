@@ -22,7 +22,6 @@ function addTask() {
     if (!task) {
         console.error('Task string is empty');
         alert('Task cannot be empty');
-        return;
     }
     fetch('/tasks', {
         method: 'POST',
