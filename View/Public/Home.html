@@ -2,15 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Manager</title>
+    <title>Taskmaster App</title>
     <link rel="stylesheet" href="HomePage.css">
 </head>
 <body>
-<h1>My To-Do List</h1>
-<input type="text" id="taskInput" placeholder="Enter a new task">
-<button id="addTaskBtn">Add Task</button>
-<ul id="taskList"></ul>
+<div id="app">
+    <h1>Opgave Liste</h1>
+    <div id="add-tasks">
+        <form id="taskForm">
+            <input type="text" id="task" placeholder="Indtask din opgave" required>
+            <button type="submit">Tilføj Opgave</button>
+        </form>
+    </div>
+    <div id="task-list">
+        <ul id="tasks">
+
+        </ul>
+    </div>
+</div>
+
+<div id="modal">
+    <div id="modal-content">
+        <span id="close">&times;</span>
+        <h2>Opdater Opgave</h2>
+        <input type="text" id="update-task" placeholder="Indtast den opdaterede opgave" required>
+        <button id="submit-update">Opdater</button>
+    </div>
+</div>
 
 <script src="Tasks.js"></script>
 </body>

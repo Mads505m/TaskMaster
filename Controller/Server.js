@@ -12,11 +12,24 @@ app.use((req,res,next)=>{
     next();
 })
 
-
-
 app.use(express.static(path.join(__dirname,'..','View','Public')));
-
 app.use('/', routes);
+
+app.use((req, res, next) => {
+    const err = new Error('This URL does not exist');
+    err.status = 404;
+    next(err);
+});
+
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+
+    if (err.status === 404) {
+        res.status(404).send('This URL does not exist');
+    } else {
+        res.status(500).send('something broke');
+    }
+});
 
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
