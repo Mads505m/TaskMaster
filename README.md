@@ -32,13 +32,13 @@ Serveren skal lytte på en defineret port (for eksempel port 3000).
 # Frontend
 Frontend i applikationen består af HTML, CSS og JavaScript med følgende funktionaliteter:
 
-# Knapper
+Knapper
 Et input-felt til at indtaste nye opgaver.
 En knap til at tilføje nye opgaver.
 En ul-liste til at vise opgaver.
 CSS-stilarter
 
-# Grundlæggende stilarter for at forbedre layoutet og udseendet af HTML-elementerne.
+Grundlæggende stilarter for at forbedre layoutet og udseendet af HTML-elementerne.
 Stilarter til at markere opgaver som fuldført.
 JavaScript-funktioner
 
