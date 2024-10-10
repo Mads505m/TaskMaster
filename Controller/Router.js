@@ -1,7 +1,6 @@
 const express = require('express');
-const routes = express();
 const path = require('path');
-
+routes= express.Router();
 
 
 routes.get('/', (req, res) => {
@@ -9,3 +8,5 @@ routes.get('/', (req, res) => {
 })
 
 module.exports= routes;
+
+
