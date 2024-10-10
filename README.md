@@ -1,14 +1,14 @@
 # TaskMaster
 Skole opgave 10-10-2024
 
-To-Do Taming: Skab Din Egen Taskmaster App
-Opsummering
+## To-Do Taming: Skab Din Egen Taskmaster App
+# Opsummering
 Denne opgave har til formål at lære dig at oprette en simpel to-do liste applikation uden brug af en database. Applikationen består af en backend bygget med Node.js og Express og en frontend baseret på HTML, CSS og JavaScript. Formålet er at skabe en fuldt funktionel to-do liste applikation, hvor du lærer at forbinde frontend og backend, håndtere HTTP-anmodninger, dynamisk opdatere UI-elementer og integrere frontend og backend uden en database.
 
-Backend
+# Backend
 Backend i denne applikation skal opsættes ved hjælp af Node.js og Express og indeholder følgende funktionalitet:
 
-Funktionelle krav
+## Funktionelle krav
 Middleware til at parse JSON-data
 Brug body-parser middleware til at håndtere JSON-data i HTTP-anmodninger.
 
@@ -29,22 +29,20 @@ DELETE /tasks/
 Start serveren
 Serveren skal lytte på en defineret port (for eksempel port 3000).
 
-Frontend
+# Frontend
 Frontend i applikationen består af HTML, CSS og JavaScript med følgende funktionaliteter:
 
-Funktionelle krav
-HTML-struktur
-
+# Knapper
 Et input-felt til at indtaste nye opgaver.
 En knap til at tilføje nye opgaver.
 En ul-liste til at vise opgaver.
 CSS-stilarter
 
-Grundlæggende stilarter for at forbedre layoutet og udseendet af HTML-elementerne.
+# Grundlæggende stilarter for at forbedre layoutet og udseendet af HTML-elementerne.
 Stilarter til at markere opgaver som fuldført.
 JavaScript-funktioner
 
-Tilføjelse af opgave til listen:
+# Tilføjelse af opgave til listen:
 Funktion til at tilføje en ny opgave til ul-listen og oprette en slet-knap og fuldført-knap for hver opgave.
 Hentning af opgaver fra serveren:
 Funktion til at sende en GET-anmodning til /tasks og opdatere listen med opgaver fra serveren.
