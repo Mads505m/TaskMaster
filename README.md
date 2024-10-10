@@ -44,16 +44,16 @@ JavaScript-funktioner
 
 # Tilføjelse af opgave til listen:
 Funktion til at tilføje en ny opgave til ul-listen og oprette en slet-knap og fuldført-knap for hver opgave.
-Hentning af opgaver fra serveren:
+Hentning af opgaver fra serveren
 
 Funktion til at sende en GET-anmodning til /tasks og opdatere listen med opgaver fra serveren.
-Tilføjelse af ny opgave:
+Tilføjelse af ny opgave
 
 Funktion til at sende en POST-anmodning til /tasks med en ny opgave og opdatere listen.
-Opdatering af opgave:
+Opdatering af opgave
 
 Funktion til at sende en PUT-anmodning til /tasks/:index for at opdatere en eksisterende opgave.
-Sletning af opgave:
+Sletning af opgave
 
 Funktion til at sende en DELETE-anmodning til /tasks/:index for at slette en opgave.
 
